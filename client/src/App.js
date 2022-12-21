@@ -3,9 +3,7 @@ import './App.css';
 import Login from './components/Login';
 import Notes from './components/Notes';
 import axios from 'axios';
-import yoda from './images/Yoda.gif'
 import { useEffect, useState } from 'react';
-
 
 function App() {
 

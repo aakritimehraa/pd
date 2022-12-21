@@ -7,14 +7,16 @@ const noteRouter = require('./routes/noteRouter')
 
 const app = express()
 app.use(express.json())
-app.use(cors({
-    origin:['http://localhost:5000' , "https://yoda-2ua8.onrender.com"]
-}))
+app.use(cors())
 
 app.use('/user' , userRouter)
 app.use('/api/notes' , noteRouter)
 
 
+
+app.get('/' , (req , res)=>{
+    res.send('hello')
+})
 
 const PORT = process.env.PORT
 app.listen(PORT , () => {
