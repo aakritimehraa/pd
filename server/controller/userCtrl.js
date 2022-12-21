@@ -42,7 +42,7 @@ const userCtrl = {
        res.json({token})
         }
         catch(err){
-            return res.status(500).json({msg:err.message})
+            return res.status(500).json({msg:"incorrect password or email"})
         }
     },
 

@@ -44,6 +44,7 @@ const loginSubmit = async(e) => {
          })
          setUser({name: '' , email: '' , password: ''})
          localStorage.setItem('tokenStore' , res.data.token)
+         setErr(res.data.msg)
          setIsLogin(true)
     }
     catch(err){
@@ -68,6 +69,8 @@ const loginSubmit = async(e) => {
                     <p className='login-p'>you dont have an account? 
                         <span onClick={() => setRegister(true)}> Register now</span>
                     </p>
+                    <p>{err}</p>
+
                 </form>
             </div>
               :
