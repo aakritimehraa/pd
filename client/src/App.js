@@ -31,9 +31,13 @@ useEffect(() => {
     }
   }
   checkLogin()
-})
+} , [])
 
 
+
+useEffect(() => {
+ alert("HI , this is a demo project , if you want you can register or use these credentials, Email - aaa2@gmail.com , Password - aaaaaaaaa")
+} , [])
   return (
     <div className="App">
 

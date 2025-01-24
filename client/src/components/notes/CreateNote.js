@@ -48,7 +48,7 @@ const createNote = async(e) => {
             <div className='create-note-form'>
             <div className='note-head'>
             <p className='date'>{moment().format("YYYY/MM/DD")}</p>
-            <p>create note</p>
+            {/* <p>create note</p> */}
             </div>
         <label>How was your day today?</label>
 
@@ -61,7 +61,7 @@ const createNote = async(e) => {
             <option name='emotion' value='sad'>sad {`\u{1F641}`}</option>
         </select>
         </div>
-        <button type='submit'>submit</button>
+        <button style={{cursor:'pointer'}} type='submit'>submit</button>
         </div>
         </form>
 </div>
